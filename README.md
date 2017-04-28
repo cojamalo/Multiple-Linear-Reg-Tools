@@ -27,8 +27,8 @@ Depending on your specific case, it will be better to use alternative methods of
    null <- lm(mpg~am, data=new_mtcars)
    full<- lm(mpg ~ ., new_mtcars)   
    best_step <- step(null, scope=list(lower=null, upper=full))
-   
-######################
+
+* * *
 
 * find_fit <- function(response, explanatory, data, type, model)
 
