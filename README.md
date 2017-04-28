@@ -28,7 +28,7 @@ Depending on your specific case, it will be better to use alternative methods of
    full<- lm(mpg ~ ., new_mtcars)   
    best_step <- step(null, scope=list(lower=null, upper=full))
    
-###
+######################
 
 * find_fit <- function(response, explanatory, data, type, model)
 
@@ -95,4 +95,4 @@ Function that takes input such as the following:
  An example call to ggpairs employing my_fn is:
  g <- new_mtcars %>% select(am, recip_hp, log_wt, mpg) %>% ggpairs(lower = list(continuous = my_fn))
 
-
+Project coded by Connor Lenio ©2017.
