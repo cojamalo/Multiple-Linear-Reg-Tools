@@ -1,8 +1,13 @@
 Title: Multiple Linear Regression Tools
+
 Date: 2017-04-28
+
 Author: Connor Lenio
+
 Dependencies: dplyr, DAAG, AICcmodavg
+
 Enhances: leaps::regsubsets, stats::AIC, stats::step, DAAG::cv.lm, AICcmodavg::AICc
+
 Description: Functions to evalute linear fit for the purposes of multiple regression and predictor selection
 
 Why: These functions were constructed to assist in learning about linear regression and evaluating linear models
