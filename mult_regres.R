@@ -172,7 +172,7 @@ model_eval <- function(model, data, kfold = FALSE) {
 
 
 
-# Note: Please install DAAG bug fix to use with: install_github("gokceneraslan/DAAG")
+# Note: Please install DAAG bug fix to use tree_lm with: install_github("gokceneraslan/DAAG")
 ## Controller Function that takes a base function as a string and the data such as: 
 # tree_lm("mpg ~ am", new_mtcars), or
 # target argument is which analysis to optimize for
@@ -182,6 +182,7 @@ model_eval <- function(model, data, kfold = FALSE) {
 # Note: 10x10 K Fold CV is optional to save computation time
 # Set kfold = True to include 10x10 K Fold CV
 # tree_lm("mpg ~ am", new_mtcars, kfold = TRUE)
+# Please use 1 instead of a period in your formula if you want to begin the search with no predictors such as: "mpg ~ 1"
 # Return: A data frame with the "best model" found for each number of predictors
 # Warning: Optimization is the root of all evil i.e. know why you are optimizing and its costs!
 tree_lm <- function(base_function, data, target = c("LOOCV","BIC", "AICc", "KFOLD"), top_n = 3, kfold = FALSE) {
