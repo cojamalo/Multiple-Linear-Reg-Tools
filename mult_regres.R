@@ -247,7 +247,7 @@ check_models <- function(base_function, data, top_n, best, target, kfold = FALSE
     current <- current[key == 0,] 
     # Construct formulas vector   
     formulas <- apply(current, 1 , paste , collapse = " + ")    
-    formulas <- paste0("mpg ~ ", formulas)
+    formulas <- paste0(params[1], " ~ ", formulas)
    # Runs model eval for each of a vector of formula strings
     for (formula in formulas)   { 
         new_mod <- lm(formula, data)
