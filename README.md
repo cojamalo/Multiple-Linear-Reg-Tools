@@ -10,8 +10,8 @@ Enhances: leaps::regsubsets, stats::AIC, stats::step, DAAG::cv.lm, AICcmodavg::A
 
 Description: Functions to evalute linear fit for the purposes of multiple regression and predictor selection
 
-Why: These functions were constructed to assist in learning about linear regression and evaluating linear models
-with the mtcars data set and may or may not be helpful to actual use outside of simple regression using data like mtcars
+Warning: These functions were constructed to assist in learning about linear regression and evaluating linear models
+with the mtcars data set and may or may not be helpful to actual use outside of simple regression using data like mtcars. Currently, they only work with fully numerical variables only. Categorical variables must be converted to numerical variables for the functions to work.
 
 ### Please note ###
 Depending on your specific case, it will be better to use alternative methods of model selection such as:
