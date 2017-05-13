@@ -2,6 +2,8 @@ Title: Multiple Linear Regression Tools
 
 Date: 2017-04-28
 
+Update: 2017-05-11
+
 Author: Connor Lenio
 
 Dependencies: dplyr, DAAG, AICcmodavg
