@@ -97,4 +97,4 @@ Function that takes input such as the following:
  An example call to ggpairs employing my_fn is:
  g <- new_mtcars %>% select(am, recip_hp, log_wt, mpg) %>% ggpairs(lower = list(continuous = my_fn))
 
-Project coded by Connor Lenio ©2017.
+Project coded by Connor Lenio - released into the public domain for educational purposes in 2017. 
